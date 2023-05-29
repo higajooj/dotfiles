@@ -2,3 +2,7 @@
 	path = zsh/.antidote
 	url = https://github.com/mattmc3/antidote.git
 	shallow = true
+[submodule "tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+  shallow = true
