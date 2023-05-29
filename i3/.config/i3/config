@@ -217,7 +217,7 @@ smart_gaps on
 
 exec --no-startup-id xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --off --output DP-2 --mode 1920x1080 --pos 0x0 --rotate normal --rate 144 --output DP-3 --off --output HDMI-1 --off --output DP-4 --primary --mode 1920x1080 --pos 0x1080 --rotate normal --rate 144 --output DP-5 --off
 exec --no-startup-id picom -b
-exec --no-startup-id ~/.config/i3/xborder/xborders --border-radius 5 --border-width 2
+exec --no-startup-id python3 ~/.config/i3/xborder/xborders --border-radius 5 --border-width 2
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 
 exec_always --no-startup-id setxkbmap -layout us,us_intl,br -option 'grp:alt_shift_toggle'
