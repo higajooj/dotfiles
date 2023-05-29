@@ -1,7 +1,7 @@
 [user]
 	name = Daniel Higa
 	email = danielhiga10@gmail.com
-	signingkey = 891840D7046AE84D
+	signingkey = danielhiga10@gmail.com
 [commit]
 	gpgsign = true
 [core]
