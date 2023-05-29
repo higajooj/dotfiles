@@ -18,3 +18,7 @@
 	path = alacritty/.config/alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme.git
   shallow = true
+[submodule "xborder"]
+	path = i3/.config/i3/xborder
+	url = https://github.com/deter0/xborder.git
+  shallow = true
