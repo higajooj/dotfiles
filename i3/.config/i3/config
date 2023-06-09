@@ -8,7 +8,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit?' -B 'Yes' 'i3-msg exit'"
 bindsym $mod+Return exec alacritty
-bindsym $mod+apostrophe exec google-chrome --password-store=gnome
 
 set $i3lockwall sh /home/daniel/.config/i3/scripts/lock.sh
 exec --no-startup-id xss-lock --transfer-sleep-lock -- $i3lockwall --no-fork
