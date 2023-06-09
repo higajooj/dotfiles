@@ -9,7 +9,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit?' -B 'Yes' 'i3-msg exit'"
 bindsym $mod+Return exec alacritty
 
-set $i3lockwall sh /home/daniel/.config/i3/scripts/lock.sh
+set $i3lockwall sh $HOME/.config/i3/scripts/lock.sh
 exec --no-startup-id xss-lock --transfer-sleep-lock -- $i3lockwall --no-fork
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
