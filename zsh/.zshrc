@@ -24,6 +24,9 @@ export PATH=$PATH:/home/daniel/bin
 # fix git signing error
 export GPG_TTY=$(tty)
 
+# editor
+export EDITOR=nvim
+
 # aliases
 alias z="nvim ~/.zshrc"
 alias zz="nvim ~/.config/i3/config"
