@@ -22,3 +22,7 @@
 	path = i3/.config/i3/xborder
 	url = https://github.com/deter0/xborder.git
   shallow = true
+[submodule "dracula-gtk"]
+	path = gtk/.themes/dracula
+	url = https://github.com/dracula/gtk.git
+  shallow = true
