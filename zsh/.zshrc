@@ -27,6 +27,10 @@ export GPG_TTY=$(tty)
 # editor
 export EDITOR=nvim
 
+# GOROOT
+. ~/.asdf/plugins/golang/set-env.zsh
+
+
 # aliases
 alias z="nvim ~/.zshrc"
 alias zz="nvim ~/.config/i3/config"
