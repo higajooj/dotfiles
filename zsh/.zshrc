@@ -37,9 +37,12 @@ export EDITOR=nvim
 # GOROOT
 . ~/.asdf/plugins/golang/set-env.zsh
 
+#zoxide
+eval "$(zoxide init zsh)"
+
 # aliases
-alias z="nvim ~/.zshrc"
-alias zz="nvim ~/.config/i3/config"
+alias zz="nvim ~/.zshrc"
+alias zzz="nvim ~/.config/i3/config"
 alias c="clear"
 alias vim="nvim"
 alias exa="exa --icons --group-directories-first"
@@ -52,3 +55,4 @@ alias docker="sudo docker"
 alias docker-compose="sudo docker compose"
 alias systemctl="sudo systemctl"
 alias brightness="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
+
