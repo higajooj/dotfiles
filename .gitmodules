@@ -1,28 +1,28 @@
 [submodule "antidote"]
-	path = zsh/.antidote
-	url = https://github.com/mattmc3/antidote
-	shallow = true
+  path = zsh/.antidote
+  url = https://github.com/mattmc3/antidote
+  shallow = true
 [submodule "tpm"]
-	path = tmux/.tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
+  path = tmux/.tmux/plugins/tpm
+  url = https://github.com/tmux-plugins/tpm
   shallow = true
 [submodule "NvChad"]
-	path = NvChad/.config/nvim
-	url = https://github.com/NvChad/NvChad
+  path = NvChad/.config/nvim
+  url = https://github.com/NvChad/NvChad
   shallow = true
 [submodule "nvchad-config"]
-	path = nvim/.config/nvim/lua/custom
-	url = https://github.com/higajooj/nvchad-config
+  path = nvim/.config/nvim/lua/custom
+  url = https://github.com/higajooj/nvchad-config
   shallow = true
 [submodule "alacritty-theme"]
-	path = alacritty/.config/alacritty/themes
-	url = https://github.com/alacritty/alacritty-theme.git
+  path = alacritty/.config/alacritty/themes
+  url = https://github.com/alacritty/alacritty-theme.git
   shallow = true
 [submodule "xborder"]
-	path = i3/.config/i3/xborder
-	url = https://github.com/deter0/xborder.git
+  path = i3/.config/i3/xborder
+  url = https://github.com/deter0/xborder.git
   shallow = true
 [submodule "dracula-gtk"]
-	path = gtk/.themes/dracula
-	url = https://github.com/dracula/gtk.git
+  path = gtk/.themes/dracula
+  url = https://github.com/dracula/gtk.git
   shallow = true
