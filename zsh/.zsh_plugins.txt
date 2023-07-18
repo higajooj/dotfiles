@@ -2,6 +2,7 @@ zsh-users/zsh-autosuggestions
 zdharma-continuum/fast-syntax-highlighting
 zsh-users/zsh-completions
 belak/zsh-utils path:completion
+romkatv/powerlevel10k
 ohmyzsh/ohmyzsh path:lib
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages
 ohmyzsh/ohmyzsh path:plugins/asdf
