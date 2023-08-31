@@ -1,0 +1,13 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/mailto=google-chrome.desktop
+x-scheme-handler/webcal=google-chrome.desktop
+application/pdf=google-chrome.desktop
+application/json=google-chrome.desktop
+image/png=google-chrome.desktop
+image/jpeg=google-chrome.desktop
+video/webm=google-chrome.desktop
