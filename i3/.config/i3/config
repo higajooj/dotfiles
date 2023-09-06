@@ -127,9 +127,9 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 default_border none
-hide_edge_borders smart_no_gaps
-gaps inner 5
-smart_gaps on
+# hide_edge_borders smart_no_gaps
+# gaps inner 5
+# smart_gaps on
 
 exec --no-startup-id $HOME/.config/i3/scripts/setup-monitors.sh
 exec --no-startup-id lxsession -s i3 -e i3
