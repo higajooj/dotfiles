@@ -137,7 +137,6 @@ exec --no-startup-id dunst
 exec --no-startup-id blueman-applet
 exec --no-startup-id solaar
 exec --no-startup-id nm-applet
-exec --no-startup-id picom -b
 exec --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id python3 $HOME/.config/i3/xborder/xborders --border-radius 5 --border-width 2
 exec --no-startup-id keepassxc
