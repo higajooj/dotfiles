@@ -8,6 +8,7 @@
     "hyprland/language",
     "keyboard-state",
     "pulseaudio",
+    "battery",
     "tray"
   ],
   "output": "DP-3",
@@ -34,13 +35,6 @@
       "locked": "",
       "unlocked": ""
     }
-  },
-  "hyprland/scratchpad": {
-    "format": "{icon} {count}",
-    "show-empty": false,
-    "format-icons": ["", ""],
-    "tooltip": true,
-    "tooltip-format": "{app}: {title}"
   },
   "tray": {
     // "icon-size": 21,
@@ -75,20 +69,17 @@
   },
   "battery": {
     "states": {
-      // "good": 95,
       "warning": 30,
       "critical": 15
     },
-    "format": "{capacity}% {icon}",
+    "interval": 5,
+    "format": "{capacity}% {icon} {power}w",
     "format-charging": "{capacity}% ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
-    // "format-good": "", // An empty format will hide the module
+    // "format-good": "",
     // "format-full": "",
     "format-icons": ["", "", "", "", ""]
-  },
-  "battery#bat2": {
-    "bat": "BAT2"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
