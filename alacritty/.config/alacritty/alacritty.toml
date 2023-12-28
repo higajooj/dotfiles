@@ -1,0 +1,19 @@
+import = ["/home/daniel/.config/alacritty/themes/themes/citylights.toml"]
+
+[cursor.style]
+blinking = "On"
+shape = "Beam"
+
+[font]
+size = 9.5
+
+[font.normal]
+family = "FantasqueSansM Nerd Font Mono"
+
+[window]
+dynamic_title = false
+opacity = 0.95
+
+[window.dimensions]
+columns = 170
+lines = 45
