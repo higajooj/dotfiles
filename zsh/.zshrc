@@ -44,4 +44,5 @@ alias ll="exa -la --group-directories-first"
 alias pacman="sudo pacman"
 alias systemctl="sudo systemctl"
 alias brightness="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
+alias fff="yarn rw prisma format"
 
