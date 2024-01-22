@@ -6,6 +6,7 @@ shape = "Beam"
 
 [font]
 size = 9.5
+offset = { y = -1 }
 
 [font.normal]
 family = "FantasqueSansM Nerd Font Mono"
@@ -13,7 +14,3 @@ family = "FantasqueSansM Nerd Font Mono"
 [window]
 dynamic_title = false
 opacity = 0.95
-
-[window.dimensions]
-columns = 170
-lines = 45
