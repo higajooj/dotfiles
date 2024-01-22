@@ -1,18 +1,19 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family:
-    FantasqueSansM Nerd Font Mono,
+    GeistMono Nerd Font,
     FontAwesome,
     Roboto,
     Helvetica,
     Arial,
     sans-serif;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 window#waybar {
-  background-color: black;
-  color: #ffffff;
+  background-color: #111;
+  color: #eee;
+  border-radius: 0;
 }
 
 window#waybar.hidden {
@@ -24,7 +25,7 @@ window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 */
 
@@ -86,8 +87,7 @@ button:hover {
 #tray,
 #language,
 #keyboard-state {
-  color: #ffffff;
-  padding: 1px 10px;
+  padding: 0 10px;
 }
 
 #window,
@@ -103,11 +103,6 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
   margin-right: 0;
-}
-
-#clock {
-  background-color: #64727d;
-  border-radius: 2px;
 }
 
 #battery {
@@ -140,50 +135,45 @@ button:hover {
 
 label:focus {
   background-color: #000000;
+  color: #eee;
 }
 
 #cpu {
-  background-color: #2ecc71;
-  color: #000000;
+  /* background-color: #ecd500; */
+  /* color: #000000; */
 }
 
 #memory {
-  background-color: #9b59b6;
+  /* background-color: black; */
+  /* color: #eee; */
 }
 
-#disk {
-  background-color: #964b00;
+#language {
+  /* background-color: #ecd500; */
+  /* color: #000000; */
 }
 
-#backlight {
-  background-color: #90b1b1;
+#keyboard-state {
+  /* background-color: #000000; */
+  /* color: #eee; */
 }
 
-#network {
-  background-color: #2980b9;
+#keyboard-state > label {
+  padding: 0 5px;
 }
 
-#network.disconnected {
-  background-color: #f53c3c;
+#keyboard-state > label.locked {
+  background: #eee;
+  color: #333;
 }
 
 #pulseaudio {
-  background-color: #f1c40f;
-  color: #000000;
+  /* background-color: #ecd500; */
+  /* color: #000000; */
 }
 
 #pulseaudio.muted {
-  background-color: #90b1b1;
-  color: #2a5c45;
-}
-
-#wireplumber {
-  background-color: #fff0f5;
-  color: #000000;
-}
-
-#wireplumber.muted {
-  background-color: #f53c3c;
+  background-color: #f99;
 }
 
 #custom-media {
@@ -192,24 +182,9 @@ label:focus {
   min-width: 100px;
 }
 
-#custom-media.custom-spotify {
-  background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-  background-color: #ffa000;
-}
-
-#temperature {
-  background-color: #f0932b;
-}
-
-#temperature.critical {
-  background-color: #eb4d4b;
-}
-
 #tray {
-  background-color: #2980b9;
+  /* background-color: #000000; */
+  /* color: #eee; */
 }
 
 #tray > .passive {
@@ -230,49 +205,3 @@ label:focus {
   color: #2d3436;
 }
 
-#mpd {
-  background-color: #66cc99;
-  color: #2a5c45;
-}
-
-#mpd.disconnected {
-  background-color: #f53c3c;
-}
-
-#mpd.stopped {
-  background-color: #90b1b1;
-}
-
-#mpd.paused {
-  background-color: #51a37a;
-}
-
-#language {
-  background: #00b093;
-  color: #740864;
-  padding: 0 5px;
-  min-width: 16px;
-}
-
-#keyboard-state {
-  background: #97e1ad;
-  color: #000000;
-  padding: 0 0px;
-  min-width: 16px;
-}
-
-#keyboard-state > label {
-  padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-  background-color: transparent;
-}
