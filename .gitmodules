@@ -18,8 +18,4 @@
   path = alacritty/.config/alacritty/themes
   url = https://github.com/alacritty/alacritty-theme.git
   shallow = true
-[submodule "dracula-gtk"]
-  path = gtk/.themes/dracula
-  url = https://github.com/dracula/gtk.git
-  shallow = true
 
