@@ -1,4 +1,6 @@
-font pango:FantasqueSansM Nerd Font Mono 11
+# font pango:FantasqueSansM Nerd Font Mono 8
+# font pango:JetBrainsMono Nerd Font Mono Bold 9
+font pango:GeistMono Nerd Font Bold 9.5
 
 set $mod Mod4
 bindsym $mod+Ctrl+Shift+l exec --no-startup-id $i3lockwall
@@ -122,18 +124,18 @@ mode "resize" {
 }
 
 # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.focused          #222222 #000000 #ffffff #6272A4   #000000
+client.focused_inactive #111111 #222222 #ffffff #44475A   #111111
+client.unfocused        #222222 #333333 #cccccc #282A36   #343434
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
-client.background       #F8F8F2
+client.background       #dfdfdf
 
-default_border none
-# hide_edge_borders smart_no_gaps
-# gaps inner 5
-# smart_gaps on
+default_border pixel 4
+hide_edge_borders smart_no_gaps
+gaps inner 5
+smart_gaps on
 
 exec --no-startup-id feh --bg-scale $HOME/wallpaper.jpg
 exec --no-startup-id $HOME/.config/i3/scripts/monitors1.sh
