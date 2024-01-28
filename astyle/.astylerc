@@ -1,0 +1,11 @@
+-s2
+-A2
+-xC120
+--squeeze-ws
+--unpad-brackets
+-H
+-U
+-xg
+-p
+-f
+-xt0
