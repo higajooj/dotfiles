@@ -1,3 +1,1 @@
-# dotfiles
-
-Managing my dotfiles with stow.
+`stow {folder}`
