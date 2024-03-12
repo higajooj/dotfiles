@@ -43,6 +43,7 @@ alias l="eza -lah --group-directories-first"
 alias ll="eza -la --group-directories-first"
 alias pacman="sudo pacman"
 alias systemctl="sudo systemctl"
+alias disable-audio="bash -c \"systemctl --user stop pipewire.socket\""
 alias brightness="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 alias fff="yarn rw prisma format"
 
