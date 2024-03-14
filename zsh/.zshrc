@@ -26,6 +26,9 @@ export EDITOR=nvim
 # fix git signing error
 export GPG_TTY=$(tty)
 
+# Android SDK
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
+
 # GOROOT
 . ~/.asdf/plugins/golang/set-env.zsh
 
