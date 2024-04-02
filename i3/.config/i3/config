@@ -6,7 +6,7 @@ set $mod Mod4
 bindsym $mod+Ctrl+Shift+l exec --no-startup-id $i3lockwall
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id rofi -show run -modes "run"
-bindsym $mod+period exec --no-startup-id rofi -show emoji -modes "emoji"
+bindsym $mod+period exec --no-startup-id rofi -modi emoji -show emoji -kb-custom-1 Return -kb-accept-entry ""
 bindsym $mod+XF86Calculator exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
 bindsym $mod+Print exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
 bindsym $mod+Shift+c reload
