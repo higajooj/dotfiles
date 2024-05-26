@@ -18,7 +18,7 @@ autoload -Uz compinit && compinit
 # setup rust
 source "$HOME/.cargo/env"
 
-export PATH=$PATH:/home/daniel/bin
+export PATH="$PATH:$HOME/bin"
 
 # editor
 export EDITOR=nvim
@@ -32,11 +32,16 @@ export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
 # GOROOT
 . ~/.asdf/plugins/golang/set-env.zsh
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "${HOME}/.bun/_bun" ] && source "${HOME}/.bun/_bun" # completions
+
 # pipx
-export PATH="$PATH:/home/daniel/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # system ruby
-export PATH="$PATH:/home/daniel/.local/share/gem/ruby/3.0.0/bin"
+export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 
 #zoxide
 eval "$(zoxide init zsh)"
