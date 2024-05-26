@@ -32,6 +32,12 @@ export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
 # GOROOT
 . ~/.asdf/plugins/golang/set-env.zsh
 
+# pipx
+export PATH="$PATH:/home/daniel/.local/bin"
+
+# system ruby
+export PATH="$PATH:/home/daniel/.local/share/gem/ruby/3.0.0/bin"
+
 #zoxide
 eval "$(zoxide init zsh)"
 
