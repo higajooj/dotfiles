@@ -57,4 +57,5 @@ alias disable-audio="bash -c \"systemctl --user stop pipewire.socket\""
 alias brightness="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 alias fff="yarn rw prisma format"
 alias fixx="xset r rate 300 && setxkbmap -layout us,us_intl,br -option 'grp:alt_shift_toggle'"
+alias p="systemctl start postgresql && systemctl start minio && systemctl start docker && systemctl start redis"
 
