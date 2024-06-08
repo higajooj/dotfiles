@@ -1,3 +1,5 @@
+#!/bin/bash
+
 img=/tmp/i3lock.png
 
 scrot -z -o $img
