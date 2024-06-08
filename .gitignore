@@ -1,6 +1,7 @@
 tmux/.tmux/plugins
 !tmux/.tmux/plugins/tpm
+
 i3/.config/i3/scripts/monitors1.sh
 i3/.config/i3/scripts/monitors2.sh
-hyprland/.config/hypr/monitor_setup.conf
-gtk/.config/gtk-3.0/bookmarks
+
+hyprland/.config/hypr/monitors.conf
