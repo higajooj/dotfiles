@@ -144,7 +144,6 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id solaar
 exec --no-startup-id nm-applet
 exec --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id keepassxc
 exec --no-startup-id fixx
 
 exec_always --no-startup-id setxkbmap -layout us,us_intl,br -option 'grp:alt_shift_toggle'
