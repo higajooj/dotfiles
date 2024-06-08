@@ -47,8 +47,10 @@ export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 eval "$(zoxide init zsh)"
 
 # aliases
+alias grep='grep --color=auto'
 alias zz="nvim ~/.zshrc"
 alias zzz="nvim ~/.config/i3/config"
+alias za="nvim ~/.config/hypr/hyprland.conf"
 alias c="clear"
 alias eza="eza --icons --group-directories-first"
 alias ls="eza --group-directories-first -l"
