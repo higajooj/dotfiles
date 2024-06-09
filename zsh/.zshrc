@@ -22,6 +22,10 @@ export PATH="$PATH:$HOME/bin"
 
 # editor
 export EDITOR=nvim
+export VISUAL=nvim
+
+#neovim as manpager
+export MANPAGER="nvim +Man!"
 
 # fix git signing error
 export GPG_TTY=$(tty)
