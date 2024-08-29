@@ -9,7 +9,7 @@
   shallow = true
 
 [submodule "nvchad-config"]
-  path = nvim/.config/nvim/lua/custom
+  path = nvim/.config/nvim
   url = https://github.com/higajooj/nvchad-config
 
 [submodule "alacritty-theme"]
