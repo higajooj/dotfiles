@@ -8,10 +8,6 @@
   url = https://github.com/tmux-plugins/tpm
   shallow = true
 
-[submodule "NvChad"]
-  path = NvChad/.config/nvim
-  url = https://github.com/NvChad/NvChad
-
 [submodule "nvchad-config"]
   path = nvim/.config/nvim/lua/custom
   url = https://github.com/higajooj/nvchad-config
