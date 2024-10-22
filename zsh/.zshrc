@@ -34,10 +34,6 @@ export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
 export NODE_OPTIONS=--use-openssl-ca
 
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-[ -s "${HOME}/.bun/_bun" ] && source "${HOME}/.bun/_bun" # completions
 
 # pipx
 export PATH="$PATH:$HOME/.local/bin"
