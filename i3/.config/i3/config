@@ -1,5 +1,3 @@
-# font pango:FantasqueSansM Nerd Font Mono 8
-# font pango:JetBrainsMono Nerd Font Mono Bold 9
 font pango:GeistMono Nerd Font Bold 9.5
 
 set $mod Mod4
@@ -7,14 +5,17 @@ bindsym $mod+Ctrl+Shift+l exec --no-startup-id $i3lockwall
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id rofi -show run -modes "run"
 bindsym $mod+period exec --no-startup-id rofi -modi emoji -show emoji -kb-custom-1 Return -kb-accept-entry ""
-bindsym $mod+XF86Calculator exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
-bindsym $mod+Print exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit?' -B 'Yes' 'i3-msg exit'"
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+F11 exec sh $HOME/.config/i3/scripts/monitors1.sh
 bindsym $mod+Shift+F12 exec sh $HOME/.config/i3/scripts/monitors2.sh
+
+# calculator keybindings
+bindsym $mod+XF86Calculator exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+bindsym $mod+Print exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+bindsym $mod+Home exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
 
 set $i3lockwall sh $HOME/.config/i3/scripts/lock.sh
 exec --no-startup-id xss-lock --transfer-sleep-lock -- $i3lockwall --no-fork

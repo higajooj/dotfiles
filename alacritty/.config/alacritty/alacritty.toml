@@ -5,11 +5,11 @@ blinking = "On"
 shape = "Beam"
 
 [font]
-size = 9.5
+size = 8
 offset = { y = -1 }
 
 [font.normal]
-family = "FantasqueSansM Nerd Font Mono"
+family = "GeistMono NF"
 
 [window]
 dynamic_title = false
