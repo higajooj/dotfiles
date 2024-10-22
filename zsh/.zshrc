@@ -9,8 +9,6 @@ antidote load
 
 autoload -Uz promptinit && promptinit && prompt pure
 
-# asdf autocompletions
-fpath=(${ASDF_DIR}/completions $fpath)
 
 # setup autocompletions
 autoload -Uz compinit && compinit
@@ -35,8 +33,6 @@ export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
 
 export NODE_OPTIONS=--use-openssl-ca
 
-# GOROOT
-. ~/.asdf/plugins/golang/set-env.zsh
 
 # bun
 export BUN_INSTALL="$HOME/.bun"

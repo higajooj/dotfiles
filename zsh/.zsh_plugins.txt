@@ -5,6 +5,5 @@ belak/zsh-utils path:completion
 sindresorhus/pure kind:fpath
 ohmyzsh/ohmyzsh path:lib
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages
-ohmyzsh/ohmyzsh path:plugins/asdf
 
 #Aloxaf/fzf-tab
