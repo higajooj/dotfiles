@@ -9,18 +9,16 @@ antidote load
 
 autoload -Uz promptinit && promptinit && prompt pure
 
+fpath+=~/.zfunc
 
 # setup autocompletions
 autoload -Uz compinit && compinit
 
-# setup rust
-source "$HOME/.cargo/env"
-
-export PATH="$PATH:$HOME/bin"
-
 # editor
 export EDITOR=nvim
 export VISUAL=nvim
+
+export PATH="$PATH:$HOME/bin"
 
 #neovim as manpager
 export MANPAGER="nvim +Man!"
@@ -28,12 +26,16 @@ export MANPAGER="nvim +Man!"
 # fix git signing error
 export GPG_TTY=$(tty)
 
+# mise
+eval "$(~/.local/bin/mise activate zsh)"
+
+# setup rust
+source "$HOME/.cargo/env"
+
 # Android SDK
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
 
 export NODE_OPTIONS=--use-openssl-ca
-
-
 
 # pipx
 export PATH="$PATH:$HOME/.local/bin"
