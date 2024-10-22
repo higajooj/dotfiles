@@ -1,12 +1,10 @@
 [submodule "antidote"]
   path = zsh/.antidote
   url = https://github.com/mattmc3/antidote
-  shallow = true
 
 [submodule "tpm"]
   path = tmux/.tmux/plugins/tpm
   url = https://github.com/tmux-plugins/tpm
-  shallow = true
 
 [submodule "nvchad-config"]
   path = nvim/.config/nvim
@@ -15,4 +13,3 @@
 [submodule "alacritty-theme"]
   path = alacritty/.config/alacritty/themes
   url = https://github.com/alacritty/alacritty-theme
-  shallow = true
