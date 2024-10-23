@@ -11,4 +11,7 @@ bindsym $mod+Home exec --no-startup-id rofi -show calc -modi calc -no-show-match
 
 # autostart
 exec --no-startup-id picom -b
-exec --no-startup-id xset r rate 300 && setxkbmap -layout br
+
+# keyboard config
+exec --no-startup-id xset r rate 300 && setxkbmap -layout us,us_intl,br -option 'grp:alt_shift_toggle'
+# exec --no-startup-id xset r rate 300 && setxkbmap -layout br
