@@ -40,9 +40,6 @@ export NODE_OPTIONS=--use-openssl-ca
 # pipx
 export PATH="$PATH:$HOME/.local/bin"
 
-# system ruby
-export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
-
 #zoxide
 eval "$(zoxide init zsh)"
 
@@ -64,3 +61,4 @@ alias brightness="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 alias fixx="xset r rate 300 && setxkbmap -layout us,us_intl,br -option 'grp:alt_shift_toggle'"
 alias p="sudo systemctl start postgresql && sudo systemctl start minio && sudo systemctl start docker && sudo systemctl start redis"
 alias v="source .venv/bin/activate"
+alias grepc="grep --color=always -e \"^\" -e"
