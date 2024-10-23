@@ -1,0 +1,14 @@
+# vi: set ft=i3config :
+
+# monitor setup keybindings
+bindsym $mod+Shift+F11 exec sh $HOME/.config/i3/scripts/monitors1.sh
+bindsym $mod+Shift+F12 exec sh $HOME/.config/i3/scripts/monitors2.sh
+
+# calculator keybindings
+bindsym $mod+XF86Calculator exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+bindsym $mod+Print exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+bindsym $mod+Home exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+
+# autostart
+exec --no-startup-id picom -b
+exec --no-startup-id xset r rate 300 && setxkbmap -layout br

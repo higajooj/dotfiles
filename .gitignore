@@ -1,8 +1,11 @@
 tmux/.tmux/plugins
 !tmux/.tmux/plugins/tpm
 
-i3/.config/i3/scripts/monitors1.sh
-i3/.config/i3/scripts/monitors2.sh
+i3/.config/i3/custom/*
+!i3/.config/i3/custom/custom.conf.example
+i3/.config/i3/scripts/*
+!i3/.config/i3/scripts/monitors.sh.example
+!i3/.config/i3/scripts/lock.sh
 
 hyprland/.config/hypr/monitors.conf
 hyprland/.config/hypr/nvidia.conf
