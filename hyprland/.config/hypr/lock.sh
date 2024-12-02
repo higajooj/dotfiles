@@ -1,3 +1,7 @@
 #!/bin/bash
 
-bash -c 'swaylock -f -c "#000000" -K -e'
+img=/tmp/swaylock.png
+
+grim $img
+magick $img -scale 10% -scale 1000% $img
+swaylock -f -K -e -i $img
