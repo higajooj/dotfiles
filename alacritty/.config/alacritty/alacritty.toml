@@ -6,8 +6,8 @@ blinking = "On"
 shape = "Beam"
 
 [font]
-size = 8
-offset = { y = -1 }
+size = 9
+offset = { y = -2 }
 
 [font.normal]
 family = "GeistMono NF"
