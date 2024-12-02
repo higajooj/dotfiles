@@ -9,3 +9,6 @@ i3/.config/i3/scripts/*
 
 hyprland/.config/hypr/monitors.conf
 hyprland/.config/hypr/nvidia.conf
+
+zsh/.zsh_config/*
+!zsh/.zsh_config/.zshrc_custom.example

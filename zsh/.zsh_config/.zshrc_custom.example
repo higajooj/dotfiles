@@ -1,0 +1,1 @@
+alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
