@@ -43,6 +43,20 @@ export PATH="$PATH:$HOME/.local/bin"
 #zoxide
 eval "$(zoxide init zsh)"
 
+SERVICES=(postgresql minio docker.socket docker.service redis nginx libvirtd.socket libvirtd.service)
+function start_services {
+  for service in "${SERVICES[@]}"; do
+    sudo systemctl start $service
+    echo "Started ${service}"
+  done
+}
+function stop_services {
+  for service in "${SERVICES[@]}"; do
+    sudo systemctl stop $service
+    echo "Stopped ${service}"
+  done
+}
+
 # aliases
 alias grep='grep --color=auto'
 alias zz="nvim ~/.zshrc"
@@ -59,6 +73,9 @@ alias lz="lazydocker"
 alias disable-audio="bash -c \"systemctl --user stop pipewire.socket\""
 alias brightness="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 alias fixx="xset r rate 300 && setxkbmap -layout us,us_intl,br -option 'grp:alt_shift_toggle'"
-alias p="sudo systemctl start postgresql && sudo systemctl start minio && sudo systemctl start docker && sudo systemctl start redis"
 alias v="source .venv/bin/activate"
 alias grepc="grep --color=always -e \"^\" -e"
+alias p="start_services"
+alias pp="stop_services"
+
+source $HOME/.zsh_config/.zshrc_custom
