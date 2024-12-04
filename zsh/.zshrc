@@ -43,6 +43,7 @@ export PATH="$PATH:$HOME/.local/bin"
 #zoxide
 eval "$(zoxide init zsh)"
 
+# For my laptop. Saves battery life 👍
 SERVICES=(postgresql minio docker.socket docker.service redis nginx libvirtd.socket libvirtd.service)
 function start_services {
   for service in "${SERVICES[@]}"; do

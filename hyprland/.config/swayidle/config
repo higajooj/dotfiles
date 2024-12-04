@@ -1,3 +1,2 @@
 timeout 300 'swaylock -f -c "#000000" -K -e'
 timeout 310 'hyprctl dispatch "dpms" off'
-timeout 600 'systemctl suspend'
