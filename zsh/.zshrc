@@ -1,5 +1,5 @@
 # source antidote
-source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+source ~/.antidote/antidote.zsh
 
 #antidote friendlier plugin directory names
 zstyle ':antidote:bundle' use-friendly-names 'yes'
@@ -12,7 +12,7 @@ autoload -Uz promptinit && promptinit && prompt pure
 fpath+=~/.zfunc
 
 # setup autocompletions
-autoload -Uz compinit && compinit
+# autoload -Uz compinit && compinit
 
 # editor
 export EDITOR=nvim
@@ -75,7 +75,6 @@ alias disable-audio="bash -c \"systemctl --user stop pipewire.socket\""
 alias brightness="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 alias fixx="xset r rate 300 && setxkbmap -layout us,us_intl,br -option 'grp:alt_shift_toggle'"
 alias v="source .venv/bin/activate"
-alias grepc="grep --color=always -e \"^\" -e"
 alias p="start_services"
 alias pp="stop_services"
 

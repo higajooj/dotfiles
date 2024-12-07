@@ -1,9 +1,14 @@
-zsh-users/zsh-autosuggestions
 zdharma-continuum/fast-syntax-highlighting
+
+mattmc3/ez-compinit
+
+zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 belak/zsh-utils path:completion
-sindresorhus/pure kind:fpath
-ohmyzsh/ohmyzsh path:lib
-ohmyzsh/ohmyzsh path:plugins/colored-man-pages
 
-#Aloxaf/fzf-tab
+getantidote/use-omz
+ohmyzsh/ohmyzsh path:lib
+
+Aloxaf/fzf-tab
+
+sindresorhus/pure kind:fpath
