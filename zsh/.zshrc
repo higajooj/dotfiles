@@ -44,7 +44,18 @@ export PATH="$PATH:$HOME/.local/bin"
 eval "$(zoxide init zsh)"
 
 # For my laptop. Saves battery life 👍
-SERVICES=(postgresql minio docker.socket docker.service redis nginx libvirtd.socket libvirtd.service)
+SERVICES=(postgresql
+  minio
+  docker.socket
+  docker.service
+  redis
+  memcached
+  nginx
+  libvirtd.socket
+  libvirtd.service
+  syncthing@daniel
+  containerd
+)
 function start_services {
   for service in "${SERVICES[@]}"; do
     sudo systemctl start $service
