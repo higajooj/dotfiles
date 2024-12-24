@@ -1,18 +1,11 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family:
-    Noto Sans,
-    GeistMono Nerd Font,
-    FontAwesome,
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: Noto Sans, FontAwesome;
   font-size: 10px;
 }
 
 window#waybar {
-  background-color: #111;
+  background-color: #000;
   color: #eee;
   border-radius: 0;
 }
@@ -164,8 +157,8 @@ label:focus {
 }
 
 #keyboard-state > label.locked {
-  background: #eee;
-  color: #333;
+  background: #333;
+  /*color: #fff;*/
 }
 
 #pulseaudio {
@@ -174,7 +167,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-  background-color: #f99;
+  background-color: #111;
 }
 
 #custom-media {
