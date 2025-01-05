@@ -135,8 +135,9 @@ exec --no-startup-id $HOME/.config/i3/scripts/monitors1.sh && sleep 2 && feh --b
 exec --no-startup-id lxsession -s i3 -e i3
 exec --no-startup-id dunst
 exec --no-startup-id blueman-applet
-exec --no-startup-id solaar
 exec --no-startup-id nm-applet
+exec --no-startup-id solaar
+exec --no-startup-id thunar --daemon
 exec --no-startup-id $HOME/.config/polybar/launch.sh
 
 include ~/.config/i3/custom/custom.conf
