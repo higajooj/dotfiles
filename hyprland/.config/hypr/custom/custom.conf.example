@@ -7,3 +7,11 @@ env = LIBVA_DRIVER_NAME,nvidia
 env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 env = GBM_BACKEND,nvidia-drm
 env = NVD_BACKEND,direct
+
+$monitors1 = $HOME/.config/hypr/custom/monitors1.conf
+$monitors2 = $HOME/.config/hypr/custom/monitors2.conf
+$monitors = $HOME/.config/hypr/monitors.conf
+
+bind = $modShift, apostrophe, movetoworkspace, 10
+bind = $modShift, F11, exec, cp --update=all $monitors1 $monitors
+bind = $modShift, F12, exec, cp --update=all $monitors2 $monitors
