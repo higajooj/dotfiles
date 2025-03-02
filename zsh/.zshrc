@@ -40,6 +40,9 @@ export NODE_OPTIONS=--use-openssl-ca
 # pipx
 export PATH="$PATH:$HOME/.local/bin"
 
+# ccache
+export PATH="/usr/lib/ccache/bin:$PATH"
+
 #zoxide
 eval "$(zoxide init zsh)"
 
