@@ -1,1 +1,9 @@
 alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+
+export GEMINI_API_KEY="123"
+export OPENAI_API_KEY="123"
+export GROQ_API_KEY="123"
+export ANTHROPIC_API_KEY="123"
+
+# macOS fix
+export NODE_EXTRA_CA_CERTS=/etc/ssl/cert.pem
