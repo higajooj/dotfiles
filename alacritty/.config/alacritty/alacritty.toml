@@ -13,7 +13,6 @@ offset = { y = -2 }
 family = "GeistMono NF"
 
 [window]
-dynamic_title = false
 opacity = 0.90
 dimensions = { columns = 150, lines = 50 }
 option_as_alt = "OnlyLeft"
