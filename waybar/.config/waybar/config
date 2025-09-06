@@ -1,48 +1,42 @@
+// vi: set ft=jsonc :
 {
   "layer": "top",
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["clock"],
+  "output": "HDMI-A-1",
+  "spacing": 5,
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
   "modules-right": [
     "cpu",
     "memory",
-    "hyprland/language",
     "keyboard-state",
+    "hyprland/language",
     "pulseaudio",
+    "network",
     "battery",
     "tray"
   ],
-  "output": "DP-3",
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{name}: {icon}",
+    "format": "{icon}",
     "format-icons": {
       "10": "",
-      "1": "",
-      "2": "",
-      "urgent": "",
-      "focused": "",
+      "1": "",
+      "2": "",
       "default": ""
+    },
+    "persistent-workspaces": {
+      "10": [],
+      "1": [],
+      "2": [],
+      "3": []
     }
-  },
-  "keyboard-state": {
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons": {
-      "locked": "",
-      "unlocked": ""
-    }
-  },
-  "tray": {
-    "icon-size": 16,
-    "spacing": 10
-  },
-  "clock": {
-    "interval": 1,
-    "timezone": "America/Campo_Grande",
-    "tooltip-format": "{:%Y %B}\n<tt>{calendar}</tt>",
-    "format": "{:%Y/%m/%d %H:%M:%S}"
   },
   "cpu": {
     "interval": 2,
@@ -53,19 +47,46 @@
     "interval": 2,
     "format": "  {}%"
   },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10
+  },
+  "clock": {
+    "interval": 1,
+    "format": "{:%Y/%m/%d %H:%M:%S}",
+    "tooltip": false
+  },
+  "keyboard-state": {
+    "capslock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "locked": "",
+      "unlocked": ""
+    }
+  },
   "battery": {
+    "tooltip": false,
     "states": {
       "warning": 30,
       "critical": 15
     },
     "interval": 5,
     "format": "{capacity}% {icon} {power}w",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
-    // "format-good": "",
-    // "format-full": "",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "network": {
+    "format-wifi": "{ipaddr}",
+    "format-ethernet": "",
+    "format-disconnected": "",
+    "tooltip-format": "Connected to {essid}",
+    "tooltip-format-ethernet": "{ifname} ",
+    "on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
   },
   "pulseaudio": {
     "scroll-step": 5,
@@ -79,11 +100,38 @@
       "headphone": "",
       "hands-free": "",
       "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     },
     "on-click": "pwvucontrol"
   },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{} {icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "",
+      "dnd-notification": " ",
+      "dnd-none": "󰂛",
+      "inhibited-notification": " ",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": " ",
+      "dnd-inhibited-none": " "
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+    "escape": true
+  },
+  "custom/weather": {
+    "exec": "~/.config/scripts/weather",
+    "interval": 3600,
+    "format": "{}",
+    "return-type": "text"
+  }
 }
