@@ -29,9 +29,6 @@ export GPG_TTY=$(tty)
 # mise
 eval "$(~/.local/bin/mise activate zsh)"
 
-# setup rust
-# source "$HOME/.cargo/env"
-
 # Android SDK
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
 
