@@ -1,0 +1,9 @@
+[options]
+
+[aliases]
+# Define aliases here. Any arguments passed to an alias are appended to the
+# command.
+# alias = command to run
+
+[binds]
+b = bg checks
