@@ -82,7 +82,6 @@ function stop_services {
 # aliases
 alias grep='grep --color=auto'
 alias zz="nvim ~/.zshrc"
-alias zzz="nvim ~/.config/i3/config"
 alias za="nvim ~/.config/hypr/hyprland.conf"
 alias c="clear"
 alias eza="eza --icons --group-directories-first"
@@ -95,7 +94,6 @@ alias lg="lazygit"
 alias lz="lazydocker"
 alias disable-audio="bash -c \"systemctl --user stop pipewire.socket\""
 alias brightness="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
-alias fixx="xset r rate 300 && setxkbmap -layout us,us_intl,br -option 'grp:alt_shift_toggle'"
 alias v="source .venv/bin/activate"
 alias p="start_services"
 alias pp="stop_services"
