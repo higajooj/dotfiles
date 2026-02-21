@@ -61,8 +61,8 @@ SERVICES=(postgresql
   redis
   memcached
   nginx
-  libvirtd.socket
-  libvirtd.service
+  # libvirtd.socket
+  # libvirtd.service
   syncthing@daniel
   containerd
 )
