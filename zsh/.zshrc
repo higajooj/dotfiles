@@ -7,12 +7,12 @@ zstyle ':antidote:bundle' use-friendly-names 'yes'
 # setup antidote
 antidote load
 
-autoload -Uz promptinit && promptinit && prompt pure
-
 fpath+=~/.zfunc
 
+autoload -Uz promptinit && promptinit && prompt pure
+
 # setup autocompletions
-# autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit
 
 # editor
 export EDITOR=nvim
