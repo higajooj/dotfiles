@@ -38,5 +38,9 @@ video/x-ogm+ogg=mpv.desktop
 video/x-theora+ogg=mpv.desktop
 video/x-matroska=mpv.desktop
 application/ogg=mpv.desktop
-
 x-scheme-handler/bruno=bruno.desktop
+x-scheme-handler/jetbrains=jetbrainsd.desktop
+
+[Added Associations]
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
+text/csv=onlyoffice-desktopeditors.desktop;

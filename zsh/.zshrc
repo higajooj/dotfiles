@@ -29,8 +29,11 @@ export GPG_TTY=$(tty)
 # mise
 eval "$(~/.local/bin/mise activate zsh)"
 
-# Android SDK
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk/
+# Android
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export NODE_OPTIONS=--use-openssl-ca
 
