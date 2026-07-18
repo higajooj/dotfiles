@@ -1,0 +1,19 @@
+-- vi: set ft=lua :
+
+-- NVIDIA
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+hl.env("GBM_BACKEND", "nvidia-drm")
+hl.env("NVD_BACKEND", "direct")
+
+local modShift = "SUPER + SHIFT"
+local home = os.getenv("HOME") or ""
+local profiles = home .. "/.config/hypr/custom/"
+local monitors = home .. "/.config/hypr/monitors.lua"
+
+hl.bind(modShift .. " + F11", hl.dsp.exec_cmd(
+    'cp --update=all "' .. profiles .. 'monitors1.lua" "' .. monitors .. '"'
+))
+hl.bind(modShift .. " + F12", hl.dsp.exec_cmd(
+    'cp --update=all "' .. profiles .. 'monitors2.lua" "' .. monitors .. '"'
+))
