@@ -148,6 +148,15 @@ hl.window_rule({
     size = { 1100, 700 },
 })
 
+-- Writing Tools
+hl.window_rule({
+    name  = "writing-tools-popup",
+    match = { class = [[^com\.writingtools\.WritingTools$]], title = [[^Writing Tools$]] },
+    float = true,
+    move  = "cursor_x cursor_y+20",
+})
+hl.bind(mainMod .. " + P", hl.dsp.global("com.writingtools.WritingTools:global"))
+
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd([[rofi -combi-modes "run,drun" -show combi]]))
 hl.bind(mainMod .. " + Period", hl.dsp.exec_cmd([[rofi -modi emoji -show emoji -kb-custom-1 Return -kb-accept-entry ""]]))
