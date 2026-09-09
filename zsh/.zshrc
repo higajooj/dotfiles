@@ -85,7 +85,7 @@ function stop_services {
 # aliases
 alias grep='grep --color=auto'
 alias zz="nvim ~/.zshrc"
-alias za="nvim ~/.config/hypr/hyprland.conf"
+alias za="nvim ~/.config/hypr/hyprland.lua"
 alias c="clear"
 alias eza="eza --icons --group-directories-first"
 alias ls="eza --group-directories-first -l"
