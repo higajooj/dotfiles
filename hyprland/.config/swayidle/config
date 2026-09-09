@@ -1,2 +1,0 @@
-timeout 600 'swaylock -f -c "#000000" -K -e'
-timeout 615 'hyprctl dispatch "dpms" off'

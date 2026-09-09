@@ -19,7 +19,7 @@ local autostart = {
     "blueman-applet",
     "solaar",
     "thunar --daemon",
-    "swayidle -w",
+    "hypridle",
     "warp-taskbar",
 }
 
