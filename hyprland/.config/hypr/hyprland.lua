@@ -150,10 +150,10 @@ hl.window_rule({
 
 -- Writing Tools
 hl.window_rule({
-    name  = "writing-tools-popup",
-    match = { class = [[^com\.writingtools\.WritingTools$]], title = [[^Writing Tools$]] },
-    float = true,
-    move  = "cursor_x cursor_y+20",
+    name   = "writing-tools-popup",
+    match  = { class = [[^com\.writingtools\.WritingTools$]] },
+    float  = true,
+    center = true,
 })
 hl.bind(mainMod .. " + P", hl.dsp.global("com.writingtools.WritingTools:global"))
 
