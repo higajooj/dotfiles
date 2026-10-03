@@ -58,16 +58,14 @@ function y() {
 
 # For my laptop. Saves battery life 👍
 SERVICES=(postgresql
-  minio
   docker.socket
   docker.service
   redis
-  memcached
-  nginx
   # libvirtd.socket
   # libvirtd.service
   syncthing@daniel
   containerd
+  sshd
 )
 function start_services {
   for service in "${SERVICES[@]}"; do
