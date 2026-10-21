@@ -1,0 +1,61 @@
+onboarding = false
+
+[theme]
+name = "dracula"
+
+[terminal]
+# New panes/tabs inherit the cwd of the pane they were created from.
+new_cwd = "follow"
+
+[keys]
+# tmux-style bindings (from ~/.tmux.conf)
+prefix = "ctrl+a"
+new_tab = "prefix+c"
+split_horizontal = "prefix+minus"            # tmux: bind - split-window -v (stacked)
+split_vertical = "prefix+shift+minus"        # tmux: bind _ split-window -h (side by side)
+previous_tab = "alt+h"
+next_tab = "alt+l"
+move_tab_previous = "alt+left"
+move_tab_next = "alt+right"
+focus_pane_left = "ctrl+alt+h"
+focus_pane_down = "ctrl+alt+j"
+focus_pane_up = "ctrl+alt+k"
+focus_pane_right = "ctrl+alt+l"
+previous_workspace = "ctrl+alt+shift+k"
+next_workspace = "ctrl+alt+shift+j"
+
+# Popups for the tools you already have installed.
+[[keys.command]]
+key = "prefix+alt+g"
+type = "popup"
+command = "lazygit"
+width = "90%"
+height = "90%"
+
+[[keys.command]]
+key = "prefix+alt+b"
+type = "popup"
+command = "btop"
+width = "90%"
+height = "90%"
+
+[ui]
+# Symbols are easier to tell apart than colored dots across many agents.
+status_indicators = "symbols"
+# Surface agents that need attention first.
+agent_panel_sort = "priority"
+show_agent_labels_on_pane_borders = true
+
+[ui.toast]
+delivery = "system"
+
+[ui.sound]
+enabled = true
+
+[session]
+# Resume claude/codex/etc. conversations after a server restart.
+resume_agents_on_restore = true
+
+[experimental]
+# Keep recent pane screen history across server restarts.
+pane_history = true
