@@ -26,7 +26,7 @@ next_workspace = "ctrl+alt+shift+j"
 
 # Popups for the tools you already have installed.
 [[keys.command]]
-key = "prefix+alt+g"
+key = "prefix+alt+l"
 type = "popup"
 command = "lazygit"
 width = "90%"
