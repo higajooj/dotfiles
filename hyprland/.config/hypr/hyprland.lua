@@ -70,7 +70,7 @@ hl.config({
 
     input = {
         kb_layout = "us, us_intl, br",
-        kb_options = "grp:alt_shift_toggle, compose:ralt",
+        kb_options = "grp:rctrl_rshift_toggle, compose:ralt",
         repeat_delay = 300,
         follow_mouse = 1,
         touchpad = {
