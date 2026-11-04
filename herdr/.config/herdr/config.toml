@@ -24,13 +24,25 @@ focus_pane_right = "ctrl+alt+l"
 previous_workspace = "ctrl+alt+shift+k"
 next_workspace = "ctrl+alt+shift+j"
 
+[[keys.command]]
+key = "prefix+alt+."
+type = "shell"
+command = "pwd | wl-copy"
+
 # Popups for the tools you already have installed.
+[[keys.command]]
+key = "prefix+alt+o"
+type = "popup"
+command = "${SHELL:-/bin/sh}"
+width = "90%"
+height = "90%"
+
 [[keys.command]]
 key = "prefix+alt+l"
 type = "popup"
 command = "lazygit"
-width = "90%"
-height = "90%"
+width = "98%"
+height = "98%"
 
 [[keys.command]]
 key = "prefix+alt+b"
@@ -53,9 +65,4 @@ delivery = "system"
 enabled = true
 
 [session]
-# Resume claude/codex/etc. conversations after a server restart.
-resume_agents_on_restore = true
-
-[experimental]
-# Keep recent pane screen history across server restarts.
-pane_history = true
+resume_agents_on_restore = false
