@@ -79,6 +79,10 @@ hl.config({
         numlock_by_default = true,
     },
 
+    render = {
+        cm_auto_hdr = 0, -- auto-HDR on fullscreen forced a modeset (flicker) with Chrome HW accel
+    },
+
     misc = {
         disable_hyprland_logo = true,
         mouse_move_enables_dpms = false,
