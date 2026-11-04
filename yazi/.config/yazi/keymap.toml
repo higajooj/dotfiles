@@ -1,6 +1,11 @@
+# Yank + put the files on the system clipboard as a URI list (browsers etc.)
 [[mgr.prepend_keymap]]
-on  = "y"
-run = [ 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ]
+on   = "y"
+desc = "Yank files and copy them to the system clipboard"
+run  = [
+  '''shell -- set -- %s; [ $# -gt 0 ] && for p in "$@"; do echo "file://$(printf '%%s' "$p" | sed 's/ /%%20/g')"; done | wl-copy --type text/uri-list && notify-send -t 1500 "Yazi" "Copied $# file(s)"''',
+  "yank",
+]
 
 [[mgr.prepend_keymap]]
 on  = "!"
